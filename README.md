@@ -45,4 +45,27 @@ A Network Packet Analyser (also known as a packet sniffer) is a tool used to mon
 ⚠️ Ethical Use Reminder
 
     Only use on networks you are authorized to monitor. Unauthorized packet sniffing is illegal and unethical.
+🧪 Example Usage
+✅ Sample Output (Captured Packet Info)
+
+Time: 2025-05-13 10:45:32
+Source IP: 192.168.1.5
+Destination IP: 93.184.216.34
+Protocol: TCP
+Source Port: 51023
+Destination Port: 80
+Payload Size: 512 bytes
+Data: GET /index.html HTTP/1.1
+
+💻 Example (Python-based CLI Tool)
+
+$ python3 packet_analyser.py
+[+] Sniffing started on interface: eth0
+[+] Captured Packet:
+    Time: 2025-05-13 10:45:32
+    Source: 192.168.1.5:51023
+    Destination: 93.184.216.34:80
+    Protocol: TCP
+    Data: GET /index.html HTTP/1.1
+
 
